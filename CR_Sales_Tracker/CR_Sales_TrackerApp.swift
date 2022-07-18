@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct CR_Sales_TrackerApp: App {
+    init (){
+        FirebaseApp.configure()
+    }
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
